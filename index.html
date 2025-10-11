@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create List on Click</title>
+</head>
+<body>
+
+<h3>📝 My Task List</h3>
+
+<input type="text" id="taskInput" placeholder="Enter a task">
+<button onclick="addTask()">Add Task</button>
+
+<ul id="taskList"></ul>
+
+<script>
+  function addTask() {
+    // Get input value
+    const input = document.getElementById("taskInput").value;
+   
+    const li = document.createElement("li");
+    li.innerText = input;
+
+ 
+    document.getElementById("taskList").appendChild(li);
+
+    // Clear input
+    input.value = "";
+  }
+</script>
+
+</body>
+</html>
+

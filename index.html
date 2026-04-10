@@ -18,7 +18,7 @@
     const input = document.getElementById("taskInput").value;
    
     const li = document.createElement("li");
-    li.innerText = input;
+    li.innerHTML = input;
 
  
     document.getElementById("taskList").appendChild(li);
